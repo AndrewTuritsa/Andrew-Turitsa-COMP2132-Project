@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Turitsa Dice Game</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../scripts/index.js" defer></script>
+</head>
+    <body>
+        <div id="upperInfo">
+            <h1>Roll the Dice!</h1>
+            <h3>An evil necromancer has challenged you to a duel! Defeat it with your magic!</h3>
+            <button id="rollButton" onclick="rollDice()">Roll</button>
+            <button id="resetButton" onclick="resetGame()">New Game</button>
+        </div>
+        <div id="diceResults">
+            <div id="wizardDice">
+                <div id="dice1Result1">-</div>
+                <div id="dice1Result2">-</div>
+                <div id="totalResult1">Total: -</div>
+            </div>
+            <div id="necromancerDice">
+                <div id="dice2Result1">-</div>
+                <div id="dice2Result2">-</div>
+                <div id="totalResult2">Total: -</div>
+            </div>
+        </div>
+        
+        <div id="actionArea">
+            <div id="twoPlayers">
+                <img src="../images/wizard.png" id="wizard" alt="Lightning">
+                <img src="../images/necromancer.png" id="necromancer" alt="Lightning">
+            </div>
+
+            <div class="hidden" id="images">
+                <img src="../images/lightning.png" id="lightning" alt="Lightning">
+                <img src="../images/skull.png" id="skull" alt="Skull">
+            </div>
+        </div>
+
+        <div id="winnerMessageArea" class="hidden">
+            <div id="winnerMessage" class="hidden">-</div>
+        </div>
+
+    </body>
+</html>

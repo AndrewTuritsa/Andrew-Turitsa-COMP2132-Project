@@ -1,0 +1,91 @@
+$primary-color: black;
+$secondary-color: beige;
+
+@mixin test-mixin($text-color, $back-color) {
+    border: solid 2px $text-color;
+    background-color: $back-color;
+    padding: 1em;
+}
+
+#wizardDice, #necromancerDice, #winnerMessageArea {
+    @include test-mixin($primary-color, $secondary-color);
+}
+
+.hidden {
+    display: none;
+}
+
+body{
+    background-color: lightcoral;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#upperInfo{
+text-align: center;
+}
+
+#diceResults{
+margin-top: 4em;
+text-align: center;
+}
+
+#rollButton{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#resetButton{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#wizardDice{
+float: left;
+margin-left: 1em;
+}
+
+#necromancerDice{
+float: right;
+margin-right: 1em;
+}
+
+#images img {
+    transition: transform 1s;
+}
+
+#actionArea{
+    margin-top: 10em;
+}
+#wizard{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+#necromancer{
+    width: 100px;
+    height: 200px;
+    float: right;
+}
+
+#images #lightning{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+#images #skull{
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+
+#winnerMessageArea{
+    display: none;
+    position: fixed;
+    text-align: center;
+}
+
+#winnerMessage img {
+    width: 100px;
+    height: 100px;
+    display: block;
+}
